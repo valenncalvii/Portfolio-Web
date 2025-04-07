@@ -8,7 +8,7 @@ function App() {
             <li>
               <a
                 href="/"
-                className="text-font-primary hover:text-font-special transition-colors duration-300"
+                className="font-font-family text-font-primary hover:text-font-special transition-colors duration-300"
               >
                 Inicio
               </a>
@@ -16,7 +16,7 @@ function App() {
             <li>
               <a
                 href="/about"
-                className="text-font-primary hover:text-font-special transition-colors duration-300"
+                className="font-font-family text-font-primary hover:text-font-special transition-colors duration-300"
               >
                 Proyectos
               </a>
@@ -24,7 +24,7 @@ function App() {
             <li>
               <a
                 href="/contact"
-                className="text-font-primary hover:text-font-special transition-colors duration-300"
+                className="font-font-family text-font-primary hover:text-font-special transition-colors duration-300"
               >
                 Habilidades
               </a>
@@ -32,7 +32,7 @@ function App() {
             <li>
               <a
                 href="/contact"
-                className="text-font-primary hover:text-font-special transition-colors duration-300"
+                className="font-font-family text-font-primary hover:text-font-special transition-colors duration-300"
               >
                 Sobre mi
               </a>
@@ -40,7 +40,7 @@ function App() {
             <li>
               <a
                 href="/contact"
-                className="text-font-primary hover:text-font-special transition-colors duration-300"
+                className="font-font-family text-font-primary hover:text-font-special transition-colors duration-300"
               >
                 Contacto
               </a>
@@ -54,16 +54,16 @@ function App() {
         </div>
         <div className="w-100 h-100 flex flex-col ml-5">
           <section>
-            <h1 className="text-4xl font-bold text-font-primary">
+            <h1 className="font-font-family text-4xl font-extrabold text-font-primary">
               Valentin Calvi Coronel
             </h1>
-            <h2 className="text-4xl font-bold my-4 text-font-special">
+            <h2 className="font-font-family text-3xl font-extrabold my-4 text-font-special">
               Desarrollo Front end
             </h2>
           </section>
           <div className="w-[30%] border mb-0 text-font-special"></div>
           <section>
-            <p className="text-xl my-4 text-font-primary">
+            <p className="font-font-family font-light text-xl my-4 text-font-primary">
               Soy un desarrollador web con experiencia en React y Tailwind CSS.
               Estoy finalizando mi tecnicatura en programación y aprendiendo
               cada día a ser un mejor desarrollador.
@@ -73,7 +73,7 @@ function App() {
             <div className="w-[30%] flex items-end justify-end border text-font-special"></div>
           </div>
           <section className="w-full h-full flex justify-evenly items-center mt-4">
-            <button className="p-3 rounded-md cursor-pointer text-font-primary bg-font-special hover:bg-font-special/75 transition-colors duration-300">
+            <button className="p-3 rounded-md cursor-pointer font-font-family text-font-primary bg-font-special hover:bg-font-special/75 transition-colors duration-300">
               Descargar cv
             </button>
             <a className="p-3 text-font-primary cursor-pointer">
@@ -111,8 +111,46 @@ function App() {
           </section>
         </div>
       </section>
-      <section className="flex justify-center h-screen">
-        <h1 className="text-4xl font-bold text-font-primary">Proyectos</h1>
+      <section className="flex flex-col items-center justify-center px-4 py-12">
+        <h1 className="font-font-family text-4xl font-extrabold text-font-primary mb-8">
+          Proyectos
+        </h1>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-4xl w-full">
+          {[
+            {
+              src: "/simomsays.jpg",
+              alt: "Simon Says",
+              link: "https://simon-says-sigma.vercel.app/",
+            },
+            {
+              src: "/zapas.jpg",
+              alt: "Zapas Heaven",
+              link: "https://zapas-heaven.netlify.app/",
+            },
+            {
+              src: "/pricing.jpg",
+              alt: "Pricing Page",
+              link: "https://chipper-sprinkles-daa850.netlify.app/",
+            },
+          ].map((project, index) => (
+            <a
+              key={index}
+              href={project.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block group rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-300"
+            >
+              <div className="relative w-full aspect-square">
+                <img
+                  src={project.src}
+                  alt={project.alt}
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+            </a>
+          ))}
+        </div>
       </section>
     </main>
   );
