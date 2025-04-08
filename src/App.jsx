@@ -152,6 +152,36 @@ function App() {
           ))}
         </div>
       </section>
+      <section className="flex flex-col items-center justify-center px-4 py-12">
+        <h1 className="font-font-family text-4xl font-extrabold text-font-primary mb-8">
+          Habilidades
+        </h1>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-4xl w-full">
+          {[
+            { src: "/html.png", alt: "HTML" },
+            { src: "/css.png", alt: "CSS" },
+            { src: "/js.png", alt: "JavaScript" },
+            { src: "/react.png", alt: "React" },
+            { src: "/tailwind.png", alt: "Tailwind CSS" },
+            { src: "/git.png", alt: "Git" },
+          ].map((skill, index) => (
+            <div
+              key={index}
+              className="flex flex-col items-center justify-center p-4 rounded-lg shadow-lg hover:shadow-2xl transition duration-300"
+            >
+              <img src={skill.src} alt={skill.alt} className="w-16 h-16 mb-2" />
+              <p className="text-lg font-font-family text-font-primary">
+                {skill.alt}
+              </p>
+            </div>
+          ))}
+        </div>
+      </section>
+      <footer className="flex justify-center items-center p-4 text-font-primary">
+        <p className="font-font-family text-lg">
+          © 2023 Valentin Calvi Coronel. Todos los derechos reservados.
+        </p>
+      </footer>
     </main>
   );
 }
