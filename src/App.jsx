@@ -10,7 +10,7 @@ function App() {
           <ul className="flex space-x-8 text-lg">
             <li>
               <a
-                href="/"
+                href="#"
                 className="font-font-family text-font-primary hover:text-font-special transition-colors duration-300"
               >
                 Inicio
@@ -18,7 +18,7 @@ function App() {
             </li>
             <li>
               <a
-                href="/about"
+                href="#proyects"
                 className="font-font-family text-font-primary hover:text-font-special transition-colors duration-300"
               >
                 Proyectos
@@ -26,7 +26,7 @@ function App() {
             </li>
             <li>
               <a
-                href="/contact"
+                href="#skills"
                 className="font-font-family text-font-primary hover:text-font-special transition-colors duration-300"
               >
                 Habilidades
@@ -34,7 +34,7 @@ function App() {
             </li>
             <li>
               <a
-                href="/contact"
+                href="#about me"
                 className="font-font-family text-font-primary hover:text-font-special transition-colors duration-300"
               >
                 Sobre mi
@@ -42,7 +42,7 @@ function App() {
             </li>
             <li>
               <a
-                href="/contact"
+                href="#contact"
                 className="font-font-family text-font-primary hover:text-font-special transition-colors duration-300"
               >
                 Contacto
@@ -79,7 +79,12 @@ function App() {
             <button className="p-3 rounded-md cursor-pointer font-font-family text-font-primary bg-font-special hover:bg-font-special/75 transition-colors duration-300">
               Descargar cv
             </button>
-            <a className="p-3 text-font-primary cursor-pointer">
+            <a
+              className="p-3 text-font-primary cursor-pointer"
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://github.com/valenncalvii"
+            >
               <svg
                 className="w-12 h-12 rounded-full p-2 text-font-primary stroke-1 hover:text-font-special transition-colors duration-300"
                 xmlns="http://www.w3.org/2000/svg"
@@ -95,7 +100,12 @@ function App() {
                 />
               </svg>
             </a>
-            <a className="p-3 text-font-primary cursor-pointer">
+            <a
+              className="p-3 text-font-primary cursor-pointer"
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://www.linkedin.com/in/valentin-calvi-coronel-66a413246/"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 448 512"
@@ -114,7 +124,10 @@ function App() {
           </section>
         </div>
       </section>
-      <section className="flex flex-col items-center justify-center px-4 py-12">
+      <section
+        id="proyects"
+        className="flex flex-col items-center justify-center px-4 py-12"
+      >
         <h1 className="font-font-family text-4xl font-extrabold text-font-primary mb-8">
           Proyectos
         </h1>
@@ -173,7 +186,10 @@ function App() {
           ))}
         </div>
       </section>
-      <section className="flex flex-col items-center justify-center px-4 py-12">
+      <section
+        id="skills"
+        className="flex flex-col items-center justify-center px-4 py-12"
+      >
         <h1 className="font-font-family text-4xl font-extrabold text-font-primary mb-8">
           Habilidades
         </h1>
@@ -216,7 +232,10 @@ function App() {
           ))}
         </div>
       </section>
-      <section className="flex flex-col items-center justify-center px-4 py-12">
+      <section
+        id="about me"
+        className="flex flex-col items-center justify-center px-4 py-12"
+      >
         <h1 className="font-font-family text-4xl font-extrabold text-font-primary mb-8">
           Un poco mas sobre mi
         </h1>
@@ -230,7 +249,10 @@ function App() {
           <div className="w-[30%] m-auto border mb-0 text-font-special"></div>
         </article>
       </section>
-      <section className="flex flex-col items-center justify-center px-4 py-12">
+      <section
+        id="contact"
+        className="flex flex-col items-center justify-center px-4 py-12"
+      >
         <article className="max-w-2xl w-full text-center">
           <h1 className="font-font-family text-4xl font-extrabold text-font-primary mb-8">
             Trabajemos juntos!!
@@ -240,7 +262,12 @@ function App() {
             disponible para trabajar en proyectos interesantes y desafiantes.
           </p>
           <div className="flex flex-row justify-center items-center mt-4">
-            <a href="#" className="p-3 text-font-primary cursor-pointer">
+            <a
+              href="https://www.instagram.com/valenncalvii.dev/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-3 text-font-primary cursor-pointer"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 448 512"
@@ -256,7 +283,12 @@ function App() {
                 />
               </svg>
             </a>
-            <a className="p-3 text-font-primary cursor-pointer">
+            <a
+              className="p-3 text-font-primary cursor-pointer"
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://www.linkedin.com/in/valentin-calvi-coronel-66a413246/"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 448 512"
