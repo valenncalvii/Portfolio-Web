@@ -76,9 +76,13 @@ function App() {
             <div className="w-[30%] flex items-end justify-end border text-font-special"></div>
           </div>
           <section className="w-full h-full flex justify-start items-center mt-4">
-            <button className="p-3 rounded-md cursor-pointer font-font-family text-font-primary bg-font-special hover:bg-font-special/75 transition-colors duration-300">
+            <a
+              href="/valentin calvi coronel - cv dev.pdf"
+              download="valentin calvi coronel - cv dev.pdf"
+              className="p-3 rounded-md cursor-pointer font-font-family text-font-primary bg-font-special hover:bg-font-special/75 transition-colors duration-300"
+            >
               Descargar cv
-            </button>
+            </a>
             <a
               className="p-3 text-font-primary cursor-pointer"
               target="_blank"
@@ -135,6 +139,13 @@ function App() {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-4xl w-full">
           {[
             {
+              name: "Cinepolis",
+              src: "/cinepolis.PNG",
+              alt: "Cinepolis",
+              link: "https://glittering-macaron-f75907.netlify.app/",
+              desc: "Pagina web sobre peliculas, donde puedes ver detalles de cada una. Este fue un proyecto grupal usando HTML, CSS y Javascript. Se utilizo la API de TMDB para obtener los datos de las peliculas.",
+            },
+            {
               name: "Simon Says",
               src: "/simomsays.jpg",
               alt: "Simon Says",
@@ -146,14 +157,14 @@ function App() {
               src: "/zapas.jpg",
               alt: "Zapas Heaven",
               link: "https://zapas-heaven.netlify.app/",
-              desc: "Una tienda de zapatillas hecha con html, css y javascript. Este proyeto",
+              desc: "Una tienda de zapatillas hecha con html, css y javascript. Este proyecto fue un trabajo para mi facultad. ",
             },
             {
               name: "Pricing Page",
               src: "/pricing.jpg",
               alt: "Pricing Page",
               link: "https://chipper-sprinkles-daa850.netlify.app/",
-              desc: "Una pagina de precios hecha con html, css y javascript. Este proyecto fue un reto de frontendmentor.io",
+              desc: "Una pagina de precios hecha con html, css y javascript. Este proyecto fue un trabajo para mi facultad.",
             },
           ].map((project, index) => (
             <a
