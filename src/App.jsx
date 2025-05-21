@@ -77,7 +77,7 @@ function App() {
           </div>
           <section className="w-full h-full flex justify-start items-center mt-4">
             <a
-              href="/valentin calvi coronel - cv dev.pdf"
+              href="/Valentin Calvi Coronel_ES_CV.pdf"
               download="valentin calvi coronel - cv dev.pdf"
               className="p-3 rounded-md cursor-pointer font-font-family text-font-primary bg-font-special hover:bg-font-special/75 transition-colors duration-300"
             >
