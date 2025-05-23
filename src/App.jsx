@@ -139,6 +139,13 @@ function App() {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-4xl w-full">
           {[
             {
+              name: "Landing Page Streetwear",
+              src: "/landing-page-streetwear.PNG",
+              alt: "Lanfding Page Streetwear",
+              link: "https://landing-page-streetwear-822b56.netlify.app/",
+              desc: "Una landing page de una tienda de ropa streetwear. Este proyecto fue programado en base a un diseño de canva.",
+            },
+            {
               name: "Cinepolis",
               src: "/cinepolis.PNG",
               alt: "Cinepolis",
